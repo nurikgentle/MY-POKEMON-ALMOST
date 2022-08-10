@@ -4,7 +4,9 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    height: 5100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .sidebar {
     width: 28.5%;
@@ -164,7 +166,6 @@ h4 {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    overflow-x: hidden;
 }
 
 .names {

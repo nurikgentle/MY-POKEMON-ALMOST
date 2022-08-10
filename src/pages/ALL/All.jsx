@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { getIndPokemon } from './../../store/actions'
 import Vector from '../ALL/vector.svg'
-import { imgs } from './Imgs';
+import { imgs } from '../../assets/Imgs';
 
 const All = (props) => {
   console.log("PROPS IS POKELIST", props);
