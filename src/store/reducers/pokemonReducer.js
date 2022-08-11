@@ -37,13 +37,31 @@ export const pokemonReducer = (state = initialState, action) => {
                 ...state,
                 isLoading: true
             }
+        case "FETCH_IND_STAR":
+            return {
+                ...state,
+                isLoading: true
+            }    
         case "FETCH_IND_SUCC":
             return {
                 ...state,
                 isLoading: false,
-                pokemon: action.payload
+                pokemon: action.payload,
+            }     
+        case "FETCH_IND_SUC":
+            return {
+                ...state,
+                isLoading: false,
+                description: action.payload
             }
         case "FETCH_IND_ERR":
+            return {
+                ...state,
+                isLoading: false,
+                isError: true,
+                error: action.payload.message
+            }
+        case "FETCH_IND_ER":
             return {
                 ...state,
                 isLoading: false,
@@ -56,6 +74,12 @@ export const pokemonReducer = (state = initialState, action) => {
                 isLoading: true,
                 error: "THERES AN ERROR HERE"
             }
+            case "UPDATE_LOADIN":
+                return {
+                    ...state,
+                    isLoading: true,
+                    error: "THERES AN ERROR HERE"
+                }
         default:
             return state
     }

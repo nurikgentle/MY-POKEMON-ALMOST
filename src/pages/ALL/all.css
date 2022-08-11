@@ -154,6 +154,13 @@ h4 {
 .special {
     right: 20px;
 }
+#checkboxx {
+    cursor: pointer;
+    border-radius: 20px;
+}
+.radio {
+    cursor: pointer;
+}
 
 
 
@@ -177,6 +184,9 @@ h4 {
 @media (max-width: 1230px) {
     .names {
         grid-template-columns: 1fr;
+    }
+    .wrapper-all {
+        height: 10100px;
     }
 }
 

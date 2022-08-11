@@ -26,5 +26,18 @@ export const getIndPokemon = name => {
         .catch(error=>{
             dispatch({type: "FETCH_IND_ERR", payload: error})
         })
+
+
+
+        dispatch({type: "FETCH_IND_STAR"})
+        axios.get(`https://pokeapi.co/api/v2/pokemon-species/${name}`)
+        .then(resp => {
+            dispatch({type: "FETCH_IND_SUC", payload: resp.data})
+        })
+        .catch(error => {
+            dispatch({type: "FETCH_IND_ER", payload: error})
+        })
     }
 }
+
+

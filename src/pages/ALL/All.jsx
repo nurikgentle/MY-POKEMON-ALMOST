@@ -7,6 +7,7 @@ import { getIndPokemon } from './../../store/actions'
 import Vector from '../ALL/vector.svg'
 import { imgs } from '../../assets/Imgs';
 
+
 const All = (props) => {
   console.log("PROPS IS POKELIST", props);
   const [isOpen, setIsOpen] = useState(false);
@@ -21,15 +22,15 @@ const All = (props) => {
                     <img onClick={(e) => setIsOpen(!isOpen)} className='vector' src={Vector} alt='vector'/>
                     {isOpen && (
                       <div className='label'>
-                        <p className='label'><input className='radio mb-20 mr-15' type="radio" name='1' value='yes' />1-ое</p>
-                        <p className='label'><input className='radio mb-20 mr-15' type="radio" name='1' value='yes' />2-ое</p>
-                        <p className='label'><input className='radio mb-20 mr-15' type="radio" name='1' value='yes' />3-ое</p>
-                        <p className='label'><input className='radio mb-20 mr-15' type="radio" name='1' value='yes' />4-ое</p>
-                        <p className='label'><input className='radio mb-20 mr-15' type="radio" name='1' value='yes' />5-ое</p>
-                        <p className='label'><input className='radio mb-20 mr-15' type="radio" name='1' value='yes' />6-ое</p>
-                        <p className='label'><input className='radio mb-20 mr-15' type="radio" name='1' value='yes' />7-ое</p>
-                        <p className='label'><input className='radio mb-20 mr-15' type="radio" name='1' value='yes' />8-ое</p>
-                        <p className='label new'><input className='radio mb-20 mr-15' type="radio" name='1' value='yes' />9-ое и новее</p>
+                        <p className='label'><input className='radio' type="radio" name='1' value='yes' />1-ое</p>
+                        <p className='label'><input className='radio' type="radio" name='1' value='yes' />2-ое</p>
+                        <p className='label'><input className='radio' type="radio" name='1' value='yes' />3-ое</p>
+                        <p className='label'><input className='radio' type="radio" name='1' value='yes' />4-ое</p>
+                        <p className='label'><input className='radio' type="radio" name='1' value='yes' />5-ое</p>
+                        <p className='label'><input className='radio' type="radio" name='1' value='yes' />6-ое</p>
+                        <p className='label'><input className='radio' type="radio" name='1' value='yes' />7-ое</p>
+                        <p className='label'><input className='radio' type="radio" name='1' value='yes' />8-ое</p>
+                        <p className='label new'><input className='radio' type="radio" name='1' value='yes' />9-ое и новее</p>
                       </div>
                     )
                     }
@@ -40,7 +41,7 @@ const All = (props) => {
                     {isActive && (
                       <div className='bottom'>
                         <div><input type="checkbox" id='checkboxx'/><label for="checkboxx"></label><span>Физические</span></div>
-                        <div><input className='input' type="checkbox" id='checkboxx' /><label for="checkboxx"></label><span>Специальные</span></div>
+                        <div><input className='input' type="checkbox" id='checkboxx' /><label for="checkboxx"></label><span>Специальные</span></div>                       
                       </div>
                     )}
                     <h4>Физические</h4>

@@ -20,6 +20,11 @@ function App(props) {
     dispatch({type: "UPDATE_LOADING"})
   }, [])
 
+  useEffect(() => {
+    props.getPokemon("https://pokeapi.co/api/v2/pokemon-species/")
+    dispatch({type: "UPDATE_LOADIN"})
+  }, [])
+
   return (
     <div>
       <Navbar />
